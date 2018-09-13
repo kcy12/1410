@@ -1,0 +1,3 @@
+﻿  Digipet.cpp
+c:\users\matth\documents\github\1410\digipet\digipet\digipet\digipet.cpp(13): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\users\matth\documents\github\1410\digipet\digipet\digipet\digipet.cpp(45): error C2857: '#include' statement specified with the /Ycpch.h command-line option was not found in the source file
