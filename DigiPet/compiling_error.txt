@@ -1,0 +1,10 @@
+/tmp/cckrovAq.o: In function `main':
+main.cpp:(.text+0x1f): undefined reference to `Digipet::Digipet()'
+main.cpp:(.text+0x2b): undefined reference to `Digipet::displayStats()'
+main.cpp:(.text+0x91): undefined reference to `Digipet::isAlive()'
+/tmp/cckrovAq.o: In function `CareForPet(Digipet&, int)':
+main.cpp:(.text+0xf4): undefined reference to `Digipet::eat()'
+main.cpp:(.text+0x108): undefined reference to `Digipet::exercise()'
+main.cpp:(.text+0x11c): undefined reference to `Digipet::play()'
+main.cpp:(.text+0x128): undefined reference to `Digipet::getOlder()'
+collect2: error: ld returned 1 exit status
