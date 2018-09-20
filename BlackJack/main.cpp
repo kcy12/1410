@@ -17,11 +17,10 @@ using namespace std;
         {
             p.hit();
             c.hit();
+            p.display();
         }//Draws first two cards
-        while(choice != 0)
-        {
-
-        }
+        cout << "Do you want to hit? (y) (n)";
+        cin >>
         total = getTotal();
         return 0;
     }

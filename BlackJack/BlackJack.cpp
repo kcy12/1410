@@ -21,9 +21,8 @@ using namespace std;
             z = 10;
         }
         display << z << " ";
-        display(stringstream& display);
     }
-    void player::display()
+    void player::display(stringstream& display)
     {
         cout << display.str() << " this is your hand";
     }
