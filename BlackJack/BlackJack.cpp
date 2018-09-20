@@ -3,28 +3,33 @@
 #include <stdlib.h>
 #include <time.h>
 #include <sstream>
-
+#include <string>
 using namespace std;
     player::player()
     {
+        srand(time(NULL));
         int card;
-        int total;
+        int total = 0;
         bool hasAce;
         stringstream display;//hand
     }
-    player::computer()
+    void player::hit(stringstream& display)
     {
-
+        int z = rand() % 9 + 1;
+        if(total <= 10 && z == 1)
+        {
+            z = 10;
+        }
+        display << z << " ";
+        display(stringstream& display);
     }
-    player::hit()
+    void player::display()
     {
-
+        cout << display.str() << " this is your hand";
     }
-    player::display()
+    int player::getTotal();
     {
-
-    }
-    getTotal();
-    {
-
+        int x = 0;
+        display >> x;
+        return x;
     }
