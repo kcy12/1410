@@ -12,13 +12,14 @@ using namespace std;
         int total = 0;
         bool hasAce;
         stringstream display;//hand
+
     }
     void player::hit(stringstream& display)
     {
         int z = rand() % 9 + 1;
         if(total <= 10 && z == 1)
         {
-            z = 10;
+            z = 11;
         }
         display << z << " ";
     }
@@ -28,7 +29,13 @@ using namespace std;
     }
     int player::getTotal();
     {
-        int x = 0;
-        display >> x;
+        while(true)
+        {
+            int x;
+            display >> x;//streams to n and
+            if(!stream)
+                break;
+            cout << "integer " x;//not how this parses so this line is for testing
+        }
         return x;
     }

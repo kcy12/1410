@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1537501743 source:c:\users\matth\desktop\1410res\1410\fraction\main.cpp
+	<iostream>
+	"Fraction.h"
+
+1537501827 c:\users\matth\desktop\1410res\1410\fraction\fraction.h
+	<ostream>
+

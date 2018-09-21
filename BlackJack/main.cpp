@@ -8,19 +8,23 @@ using namespace std;
     int card, total, r;
     bool hasAce;
     bool win;
-    choice = 87;
+    string choice = "";
     int main()
     {
         player p;//making objects for player and computer from player class.
         player c;
-        for(int i = 0; i < 2; i++)
+/*        for(int i = 0; i < 2; i++)
         {
             p.hit();
             c.hit();
             p.display();
-        }//Draws first two cards
+        }//Draws first two cards*/ // going to replace this with linked lists
         cout << "Do you want to hit? (y) (n)";
-        cin >>
+        cin >> choice;
+        if(choice == y)
+        {
+            p.hit();
+        }
         total = getTotal();
         return 0;
     }
