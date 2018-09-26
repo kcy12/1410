@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1537976351 source:/home/milesp/Documents/GitKraken/1410/TileGame/TileGame.cpp
+	<sstream>
+	<string>
+	<stdlib.h>
+	<time.h>
+	<iostream>
+	"TileGame.h"
+
+1537971682 /home/milesp/Documents/GitKraken/1410/TileGame/TileGame.h
+	<string>
+
+1537971675 source:/home/milesp/Documents/GitKraken/1410/TileGame/TileGameDriver.cpp
+	<iostream>
+	"TileGame.h"
+

@@ -18,7 +18,7 @@ using namespace std;
             p.hit();
             c.hit();
             p.display();
-        }//Draws first two cards*/ // going to replace this with linked lists
+        }//Draws first two cards*/ // MAY replace this with linked lists
         cout << "Do you want to hit? (y) (n)";
         cin >> choice;
         if(choice == y)
