@@ -18,7 +18,7 @@ int main() {
     choice = getChoice();
     switch (choice){
       case RIGHT:
-        game.moveRight();
+        game.moveRight();//am i not supposed to pass the array?
         break;
       case LEFT:
         game.moveLeft();
@@ -29,7 +29,7 @@ int main() {
     }
     chances ++;
   }while (!game.inOrder() && choice > 0 && chances < 50);
-  
+
   if(game.inOrder())
   {
     displayWinner();
