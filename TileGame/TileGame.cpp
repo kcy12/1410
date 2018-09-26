@@ -91,7 +91,7 @@ bool TileGame::inOrder()
     //TODO: Check to see if the game is in order.
     for(int i =0; i< 10; i++)
     {//How to check every position efficiently and still return correctly
-        if(tiles[i] == i;)
+        if(tiles[i] == i)
         {
             return true;//THIS IS BROKEN
         }
