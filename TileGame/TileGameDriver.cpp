@@ -18,7 +18,7 @@ int main() {
     choice = getChoice();
     switch (choice){
       case RIGHT:
-        game.moveRight();//am i not supposed to pass the array?
+        game.moveRight();
         break;
       case LEFT:
         game.moveLeft();

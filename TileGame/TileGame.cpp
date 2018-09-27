@@ -32,12 +32,14 @@ int TileGame::findZero()
     //DONE
     for(int i = 0; i < 10; i++)
     {
-        if(tiles[i] == 0);
-        return i;
+		if (tiles[i] == 0)
+		{
+			return i;
+		}
     }
 }
 
-void TileGame:: moveRight()
+void TileGame:: moveLeft()
 {
     int zero = findZero();//index of zero
 
@@ -55,7 +57,7 @@ void TileGame:: moveRight()
 
 
 }
-void TileGame::moveLeft()
+void TileGame::moveRight()
 {
     int zero = findZero();
     if(zero == 9)
@@ -74,8 +76,10 @@ void TileGame::moveLeft()
 void TileGame::swap()
 {
     int zero = findZero();
-    if(zero == 9 || zero == 0)
-      return;
+	if (zero == 9 || zero == 0)
+	{
+		return;
+	}
     int temp1 = zero +1;
     int temp2 = zero -1;
     int a = tiles[temp1];
@@ -88,12 +92,12 @@ void TileGame::swap()
 
 bool TileGame::inOrder()
 {
-    //TODO: Check to see if the game is in order.
+    //Done
     for(int i =0; i< 10; i++)
-    {//How to check every position efficiently and still return correctly
-        if(tiles[i] == i)
+    {
+        if(tiles == tilesAnswer)
         {
-            return true;//THIS IS BROKEN
+            return true;//fixed
         }
     }
     return false;

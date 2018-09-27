@@ -15,6 +15,7 @@ class TileGame{
   private:
      int tiles[10];
      int findZero();
+     int tilesAnswer[10];
 
 };
 
