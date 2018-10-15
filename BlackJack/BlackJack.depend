@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1539604998 source:c:\users\matth\desktop\1410res\1410\blackjack\main.cpp
+	<iostream>
+	<string>
+	<sstream>
+	<stdlib.h>
+	<time.h>
+	"thing.h"
+
+1539602028 c:\users\matth\desktop\1410res\1410\blackjack\thing.h
+	<sstream>
+
+1539604755 source:c:\users\matth\desktop\1410res\1410\blackjack\blackjack.cpp
+	"thing.h"
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	<sstream>
+	<string>
+

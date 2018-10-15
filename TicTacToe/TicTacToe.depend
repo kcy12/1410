@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1539596320 source:c:\users\matth\desktop\1410res\1410\tictactoe\tictactoe.cpp
+	<iostream>
+	"TTTGrid.h"
+
+1539595169 c:\users\matth\desktop\1410res\1410\tictactoe\tttgrid.h
+
+1539596741 source:c:\users\matth\desktop\1410res\1410\tictactoe\tttgrid.cpp
+	"TTTGrid.h"
+	<iostream>
+

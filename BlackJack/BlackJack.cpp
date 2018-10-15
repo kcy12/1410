@@ -11,31 +11,38 @@ using namespace std;
         int card;
         int total = 0;
         bool hasAce;
-        stringstream display;//hand
+        stringstream hand;//hand
 
     }
-    void player::hit(stringstream& display)
+    void player::hit()//reference of display
     {
-        int z = rand() % 9 + 1;
-        if(total <= 10 && z == 1)
+        card = rand() % 9 + 1;
+        //cout << card<< endl; testing
+        if(total <= 10 && card == 1)
         {
-            z = 11;
+            card = 11;
         }
-        display << z << " ";
+        hand << card << " ";//streams new random card and space to display stringstream
+        //cout << hand.str() << "this is your hand" << endl; testing purposes
     }
-    void player::display(stringstream& display)
+    void player::display()
     {
-        cout << display.str() << " this is your hand";
+        cout << hand.str() << "this is your hand" << endl;
     }
-    int player::getTotal();
+    int player::getTotal()
     {
-        while(true)
+        string x;
+        int y;
+        int z = 0;
+        while(!hand.eof())//goes until the end of stream
         {
-            int x;
-            display >> x;//streams to n and
-            if(!stream)
-                break;
-            cout << "integer " x;//not how this parses so this line is for testing
+            //streams string to x
+            while(hand >> y)//streams ints
+            {
+                //cout << "integer " << y << endl;//This line makes sure it works
+                z += y; // adds all parsed integers
+            }
         }
-        return x;
+        //cout << z << endl; testing
+        return z;
     }
