@@ -1,6 +1,5 @@
 #include <iostream>
 #include "TTTGrid.h"
-
 using namespace std;
 
 int main()
@@ -15,7 +14,7 @@ int main()
     for(int i = 0; i < 9; i++)//Start Loop Here
     {
         system("cls"); //Only non repl.it programmers can use this command to clear the screen
-        //14.  Display the grid using the display method in the TTTGrid class
+        //14.  Display the grid using the display method in the TTTGrid class//does this work on linux?
         game.display();
 
         cout<< "\nChoose one: ";
@@ -27,7 +26,7 @@ int main()
         //17.  Modify the if statement below to check to see if the player has won
         if(game.hasWon())
         {   //18.  Display a message saying getCurrentPlayer() Wins then end the loop
-            cout << "player wins";
+            cout << "player wins" << endl;
             break;
         }
         else

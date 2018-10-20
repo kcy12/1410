@@ -12,11 +12,14 @@ int main()
     Mastermind game;
     //The user's guess
     string guess;
-
     //Give 10 chances to guess
     int i;
+
     for(i = 10; i > 0; i--)
     {
+
+
+        //cout << game.getSolution() << endl; testing code
         //Allow them to guess
         cout << "Guess " << i << ": ";
         cin >> guess;
