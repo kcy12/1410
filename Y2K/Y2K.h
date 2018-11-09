@@ -11,8 +11,11 @@ class Y2K
 {
     public:
         Y2K();
-        string swap(string);
-        void readFile();
+        void swap();
+        void readFile(string);
+        void write(string);
     private:
-    vector<string>Y2KList;
-}
+    string store;
+};
+
+#endif

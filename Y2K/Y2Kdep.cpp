@@ -1,17 +1,32 @@
+#include <iostream>
 #include "Y2K.h"
-
+using namespace std;
 Y2K::Y2K()
 {
-    readFile();
 }
-string Y2K::swap(string input)
+void Y2K::swap()
 {
-    string retunSen = "";
-    stringstream a(input);
-    string nextword;
-    while(getline)
+    for(int i = 0; i < store.length(); i++)
+    {
+        if(store[i] == 'y')
+        {
+            store[i] = 'k';
+        }
+    }
 }
 void Y2K::readFile(string fileName)
 {
-    ifstream fin(fileName, )
+    //cout << "print" << endl;
+    ifstream fin(fileName, ios::in);
+    while(!fin.eof())
+    {
+        getline(fin, store);
+    }
+    fin.close();
+}
+void Y2K::write(string fileName)
+{
+    ofstream fout(fileName, ios::trunc);
+    fout << store;
+    fout.close();
 }
