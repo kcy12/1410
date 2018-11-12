@@ -16,6 +16,7 @@ class Y2K
         void write(string);
     private:
     string store;
+	string finalOutput;
 };
 
 #endif

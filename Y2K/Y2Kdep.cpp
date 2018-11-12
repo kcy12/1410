@@ -21,12 +21,13 @@ void Y2K::readFile(string fileName)
     while(!fin.eof())
     {
         getline(fin, store);
+		finalOutput.append(" ", store);
     }
     fin.close();
 }
 void Y2K::write(string fileName)
 {
     ofstream fout(fileName, ios::trunc);
-    fout << store;
+    fout << finalOutput;
     fout.close();
 }
